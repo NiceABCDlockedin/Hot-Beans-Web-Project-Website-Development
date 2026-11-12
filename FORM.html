@@ -95,13 +95,13 @@ text-align: left;
            const email = document.getElementById("email").value.trim();
            const phoneNumber = document.getElementById("phoneNumber").value.trim();
            const Education = document.getElementById("Education").value.trim();
-           const reasonsForWork = document.getElementById("reasonsforWork").value.trim();
+           const reasonsforWork = document.getElementById("reasonsForWork").value.trim();
            const errorDisplay = document.getElementById('errorMessage');
            //Define the input masks to validate the Phone Number and Email against.
            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //Ensures that an @ and . must be present in the email address
            const phonePattern = /^\d{11}$/; //Allows a phone number to have eleven decimal characters
            //Validation to check if all inputs are entered and meet the input masks
-           if (firstName === "" || lastName === "" || email === "" || phoneNumber === "" || reasonsForWork === "") {
+           if (firstName === "" || lastName === "" || email === "" || phoneNumber === "" || reasonsforWork === "") {
                errorDisplay.innerText = "All fields marked with * are required."; //Alters errorDisplay to contain a message
                return false;
            }
