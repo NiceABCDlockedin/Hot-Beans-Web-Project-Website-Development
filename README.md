@@ -25,3 +25,8 @@ Built for a fictional London-based web development agency specialising in websit
 * `Courses.html` — Recommended web development courses and video tutorials.
 * `FORM.html` — Online job application form with JavaScript input validation.
 * Media assets (`code.png`, `train.png`, `webdev.jpg`, `video-created-from-script.mp4`, and profile images) required across the site.
+
+## Website Address
+* **[View Live Website](https://niceabcdlockedin.github.io/Hot-Beans-Web-Project-Website-Development)** — Hosted via GitHub Pages so you can browse the site directly in your browser without having to download the repository files.
+
+
