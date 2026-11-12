@@ -102,16 +102,19 @@ text-align: left;
            const phonePattern = /^\d{11}$/; //Allows a phone number to have eleven decimal characters
            //Validation to check if all inputs are entered and meet the input masks
            if (firstName === "" || lastName === "" || email === "" || phoneNumber === "" || reasonsforWork === "") {
+               errorDisplay.style.color = "red"; //changes the font color of errorDisplay
                errorDisplay.innerText = "All fields marked with * are required."; //Alters errorDisplay to contain a message
                return false;
            }
 
            if (!emailPattern.test(email)) {
+               errorDisplay.style.color = "red"; //changes the font color of errorDisplay
                errorDisplay.innerText = "Please enter a valid email address."; //Alters errorDisplay to contain a message
                return false;
            }
 
            if (!phonePattern.test(phoneNumber)) {
+               errorDisplay.style.color = "red"; //changes the font color of errorDisplay
                errorDisplay.innerText = "Phone number must be 11 digits."; //Alters errorDisplay to contain a message
                return false;
            }
