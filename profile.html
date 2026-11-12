@@ -1,0 +1,123 @@
+<head>
+<title>Company Profile</title>
+<style>
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav {
+/* This defines the background color of the menu at the top of the screen */
+background-color: #A5CCEF; 
+overflow: hidden;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+}
+
+nav li {
+margin: 0 15px;
+}
+
+nav a {
+text-decoration: none;
+/* Defines the colour of the text prior to being hovered on the main menu navigaton bar */
+color: white; 
+/* The font used for this text is Sans Serif */
+font-family: sans-serif; 
+text-transform: uppercase;
+padding: 10px 15px;
+}
+
+nav a:hover {
+/* Defines the background colour and colour of the text after being hovered over on the main menu navigation bar */
+background-color: white;
+color: #A5CCEF;
+border-radius: 5px;
+}
+
+body {
+/* Sets the font for the paragraph on the page */
+font-family: "Bahnschrift SemiBold";
+text-align: left;
+}
+
+header {
+text-align: left,
+}
+
+.list {
+    max-width: 800px; 
+    margin-left: 20px; 
+}
+
+p {
+    margin-bottom: 15px; 
+    line-height: 1.6;  
+}
+
+.right-img {
+            height: 1000px;
+            width: 500px;  
+            object-fit: cover;  /* This crops the image to fit instead of squashing it */
+            float: right;
+            /* This prevents text from touching the image */
+            margin-left: 20px;            
+            margin-bottom: 20px;
+}
+
+.content-wrapper {
+    display: flex;          /* This puts the image and the text side by side */
+    align-items: stretch;  /* This forces the image to be as tall as the text */
+    gap: 30px;            /* Adds space between the text and image */
+    padding: 20px;
+}
+
+</style>
+</head>
+<body>
+<nav>
+<div id="logo">
+<img src="train.png" alt="Logo" style="height: 80px;"> 
+</div>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="profile.html">About</a></li>
+<li><a href="Employee Profile.html">Profiles</a></li>
+<li><a href="JobSpec.html">Job Specification</a></li>
+<li><a href="Courses.html">Courses</a></li>
+<li><a href="FORM.html">Apply</a></li>
+</ul>
+</nav>
+
+<div id="page">
+</div>
+<div class="content-wrapper">
+   <div class="list">
+   <u><i><h3>About Hot Beans Web</h3></i></u> 
+   <h4><p>Our team has been in web development since Tuesday, March 28<sup>th</sup> 1995.</p>
+   <p>We have built tons of websites including websites for schools, colleges, sixth forms and universities.</p> 
+   <p>Notable examples of websites we have produced are websites for New City College, The Brittons Academy, Abbs Cross Academy and also CU London Dagenham.</p>
+   <p>Hot Beans Web has been recognised as a Sunday Times Best Place to Work, making us one of only two web development companies in the UK – and the only one in London – to receive this honour.</p>
+   <p>This achievement reflects our outstanding levels of employee engagement, empowerment, communication, wellbeing, and confidence in leadership.</p>
+   <p>Whether you're a web developer, web analyst, UX designer or one of our backend developers using Python and SQL - you’ll be joining a high-performing team that is shaping futures, raising aspirations, and empowering communities.</p>
+   <p>We offer a dynamic, inclusive, and supportive environment where your professional development is valued and your voice matters.</p>
+   <p>Explore our current opportunities and find out how you can be part of one of the most ambitious and inspirational web development companies in the UK.</p>
+   <p>Click on this button below to see profiles of our existing trainee website developers who we have hired.</p></h4>
+   <a href="Employee Profile.html">
+    <button>Employee Profiles</button>
+   </a>
+   <h4><p>Click on this button below to visit our application form and learn more about entry requirements that we need for a job opportunity in website development.</p></h4>
+   <a href="FORM.html">
+    <button>Application Form</button>
+   </a>
+</div> 
+<img src="code.png" alt="Hot Beans Code Example" class="right-img" width="300">
+</div>
+
+</body>
+</html>

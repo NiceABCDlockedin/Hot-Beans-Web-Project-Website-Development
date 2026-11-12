@@ -1,0 +1,155 @@
+<head>
+<title>Employee Profiles</title>
+<style>
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav {
+/* This defines the background color of the menu at the top of the screen */
+background-color: #A5CCEF; 
+overflow: hidden;
+text-align: left;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+}
+
+nav li {
+margin: 0 15px;
+}
+
+nav a {
+text-decoration: none;
+/* Defines the colour of the text prior to being hovered on the main menu navigaton bar */
+color: white; 
+/* The font used for this text is Sans Serif */
+font-family: sans-serif; 
+text-transform: uppercase;
+padding: 10px 15px;
+}
+
+nav a:hover {
+/* Defines the background colour and colour of the text after being hovered over on the main menu navigation bar */
+background-color: white;
+color: #A5CCEF;
+border-radius: 5px;
+}
+
+.logo {
+image-align: left;
+}
+
+body {
+/* Sets the font for the paragraph on the page */
+font-family: "Bahnschrift SemiBold";
+}
+
+header {
+text-align: left,
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    width: 100%; /* Ensures it spans the whole page */
+}
+
+
+.list {
+    flex: 1; 
+    margin-left: 0;
+    text-align: left;
+}
+
+
+.profile-pic img {
+    width: auto; 
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.profile-pic {
+    float: none; /* Floats don't work inside Flexbox */
+}
+
+p {
+    margin-bottom: 15px; 
+    line-height: 1.6;  
+}
+
+.text-content {
+  flex: 1;                 /* Takes up the remaining space */
+}
+
+.side-image {
+  width: 350px;            /* Fixed width for the image */
+}
+</style>
+</head>
+<body>
+<nav>
+<div id="logo">
+<img src="train.png" alt="Logo" style="height: 80px;"> 
+</div>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="profile.html">About</a></li>
+<li><a href="Employee Profile.html">Profiles</a></li>
+<li><a href="JobSpec.html">Job Specification</a></li>
+<li><a href="Courses.html">Courses</a></li>
+<li><a href="FORM.html">Apply</a></li>
+</ul>
+</nav>
+
+<div id="page">
+</div>
+<div id="header">
+    <u><h2>Employee Profiles</h2></u>
+</div>
+<h2><p>Here are profiles of our existing trainee website developers who we have hired.</p></h2>
+
+<div class="content-wrapper">
+    <div class = "profile-pic">
+    <img src="istockphoto-1450969748-612x612.png" alt="Jake working on some code." class="profile-pic">
+    </div>
+    <div class="list">
+    <h3>
+    <p>Jake has been working at Hot Beans Web for the past two years, and completed A-levels in Computing and Mathematics as well as a BTEC National Subsidiary Diploma in Information Technology in 2015.</p>
+    <ol>
+    <li><p>Some of his achievements include leading the development of a responsive website for a local school which was for The Brittons Academy and he has contributed to several other successful projects.</p></li>
+    <li><p>Jake is passionate about coding and is always eager to learn new technologies. He has a strong foundation in HTML, CSS, JavaScript, and Python, and is currently expanding his skills in SQL and Node.js.</p></li>
+    <li><p>In his free time, Jake enjoys participating in hackathons and contributing to open-source projects. He is also an active member of the local tech community, regularly attending meetups and workshops.</p></li>
+    </ol>
+    <p>Jake's dedication to his work and his continuous pursuit of knowledge make him a valuable asset to our team at Hot Beans Web.</p>
+    </h3>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="profile-pic">
+    <img src="istockphoto-1451456915-612x612.png" alt="Emily working on some code." class="profile-pic">
+    </div>
+    <div class="list"></div>
+    <h3>
+    <p>Emily has been working at Hot Beans Web for the past three years, and completed A-levels in Computer Science, Mathematics, Further Mathematics, Physics and Music Technology as well as an Extended Project Qualification (EPQ) in 2023.</p>
+    <ol>
+    <li><p>Some of her achievements include leading the design and development of a user-friendly education website for New City College Havering Sixth Form, which has received positive feedback from both students and staff7.</p></li>
+    <li><p>Emily is passionate about web design and user experience. She has a strong foundation in HTML, CSS, JavaScript, and Adobe Illustrator, and is currently expanding her skills in UI design.</p></li>
+    <li><p>In her free time, Emily enjoys exploring new design trends and participating in online design communities. She also volunteers her time to mentor aspiring web designers through local workshops.</p></li>
+    </ol>
+    <p>Emily's creativity and commitment to delivering high-quality work make her an invaluable member of our team at Hot Beans Web.</p>
+    </h3>
+    </div>
+</div>
+</body>
+</html>

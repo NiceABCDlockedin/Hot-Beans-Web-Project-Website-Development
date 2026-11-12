@@ -1,0 +1,132 @@
+<head>
+<title>Employee Profiles</title>
+<style>
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav {
+/* This defines the background color of the menu at the top of the screen */
+background-color: #A5CCEF; 
+overflow: hidden;
+text-align: left;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+}
+
+nav li {
+margin: 0 15px;
+}
+
+nav a {
+text-decoration: none;
+/* Defines the colour of the text prior to being hovered on the main menu navigaton bar */
+color: white; 
+/* The font used for this text is Sans Serif */
+font-family: sans-serif; 
+text-transform: uppercase;
+padding: 10px 15px;
+}
+
+nav a:hover {
+/* Defines the background colour and colour of the text after being hovered over on the main menu navigation bar */
+background-color: white;
+color: #A5CCEF;
+border-radius: 5px;
+}
+
+.logo {
+image-align: left;
+}
+
+body {
+/* Sets the font for the paragraph on the page */
+font-family: "Bahnschrift SemiBold";
+}
+
+header {
+text-align: left,
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    width: 100%; /* Ensures it spans the whole page */
+}
+
+
+.list {
+    flex: 1; 
+    margin-left: 0;
+    text-align: left;
+}
+
+
+.profile-pic img {
+    width: auto; 
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.profile-pic {
+    float: none; /* Floats don't work inside Flexbox */
+}
+
+p {
+    margin-bottom: 15px; 
+    line-height: 1.6;  
+}
+
+.text-content {
+  flex: 1;                 /* Takes up the remaining space */
+}
+
+.side-image {
+  width: 350px;            /* Fixed width for the image */
+}
+</style>
+</head>
+<body>
+<nav>
+<div id="logo">
+<img src="train.png" alt="Logo" style="height: 80px;"> 
+</div>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="profile.html">About</a></li>
+<li><a href="Employee Profile.html">Profiles</a></li>
+<li><a href="JobSpec.html">Job Specification</a></li>
+<li><a href="Courses.html">Courses</a></li>
+<li><a href="FORM.html">Apply</a></li>
+</ul>
+</nav>
+
+<div id="page">
+</div>
+<div id="header">
+<u><p><h1>Courses</h1></p></u>
+<h2>  
+<p>We are always looking for talented individuals to join our team!</p>
+<p>There are also some websites we would like to recommend for developing website development skills:</p>
+<ol>
+<li><p><a href="https://www.codecademy.com/">Codecademy</a> - An interactive platform that offers coding classes in various programming languages, including HTML, CSS, JavaScript, and Python.</p></li>
+<li><p><a href="https://www.freecodecamp.org/">freeCodeCamp</a> - A nonprofit organization that provides free coding lessons and projects to help learners build their skills and portfolios.</p></li>
+<li><p><a href="https://www.udemy.com/">Udemy</a> - An online learning platform that offers a wide range of courses on web development, including both beginner and advanced topics.</p></li>
+<li><p><a href="https://www.w3schools.com/">W3Schools</a> - A comprehensive online resource for learning web development technologies, with interactive tutorials and examples.</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=Eb3lOiukwAQ/">HTML & CSS Full Course | Web Development for Beginners</a> - A great web development course on YouTube which is a tutorial into HTML and CSS by Smoljames.</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=hdI2bqOjy3c/">JavaScript Crash Course For Beginners</a> - A great crash course into JavaScript created by Traversy Media on YouTube.</p></li>
+</ol>
+</h2>
+</body>
+</html>

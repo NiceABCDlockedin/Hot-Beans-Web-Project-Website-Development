@@ -1,0 +1,123 @@
+<head>
+<title>Home</title>
+<style>
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav {
+/* This defines the background color of the menu at the top of the screen */
+background-color: #A5CCEF; 
+overflow: hidden;
+text-align: left;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+}
+
+nav li {
+margin: 0 15px;
+}
+
+nav a {
+text-decoration: none;
+/* Defines the colour of the text prior to being hovered on the main menu navigaton bar */
+color: white; 
+/* The font used for this text is Sans Serif */
+font-family: sans-serif; 
+text-transform: uppercase;
+padding: 10px 15px;
+}
+
+nav a:hover {
+/* Defines the background colour and colour of the text after being hovered over on the main menu navigation bar */
+background-color: white;
+color: #A5CCEF;
+border-radius: 5px;
+}
+
+.logo {
+image-align: left;
+}
+
+body {
+/* Sets the font for the paragraph on the page */
+font-family: "Bahnschrift SemiBold";
+}
+
+header {
+text-align: left,
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    width: 100%; /* Ensures it spans the whole page */
+}
+
+
+.list {
+    flex: 1; 
+    margin-left: 0;
+    text-align: left;
+}
+
+
+.profile-pic img {
+    width: auto; 
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.profile-pic {
+    float: none; /* Floats don't work inside Flexbox */
+}
+
+p {
+    margin-bottom: 15px; 
+    line-height: 1.6;  
+}
+
+.text-content {
+  flex: 1;                 /* Takes up the remaining space */
+}
+
+.side-image {
+  width: 350px;            /* Fixed width for the image */
+}
+</style>
+</head>
+<body>
+<nav>
+<div id="logo">
+<img src="train.png" alt="Logo" style="height: 80px;"> 
+</div>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="profile.html">About</a></li>
+<li><a href="Employee Profile.html">Profiles</a></li>
+<li><a href="JobSpec.html">Job Specification</a></li>
+<li><a href="Courses.html">Courses</a></li>
+<li><a href="FORM.html">Apply</a></li>
+</ul>
+</nav>
+<div id="page">
+    <h3><p>Welcome to the official Hot Beans Web website!</p></h3>
+    <h3><p>We are dedicated to providing you with the best experience possible. Explore our site to learn more about our services and offerings.</p></h3>
+    <h3><p>Feel free to navigate through our pages and discover what we have in store for you. If you have any questions, don't hesitate to reach out to us.</p></h3>
+    <h3><p>Thank you for visiting Hot Beans Web!</p></h3>
+    <img src = "webdev.jpg" alt="Web Development" width="1300" height="500">
+    <iframe width="1300" height="420"
+    src="video-created-from-script.mp4">
+    </iframe>
+</div>

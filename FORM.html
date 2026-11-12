@@ -1,0 +1,132 @@
+<head>
+<title>Application Form</title>
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav {
+/* This defines the background color of the menu at the top of the screen */
+background-color: #A5CCEF; 
+overflow: hidden;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+}
+
+nav li {
+margin: 0 15px;
+}
+
+nav a {
+text-decoration: none;
+/* Defines the colour of the text prior to being hovered on the main menu navigaton bar */
+color: white; 
+/* The font used for this text is Sans Serif */
+font-family: sans-serif; 
+text-transform: uppercase;
+padding: 10px 15px;
+}
+
+nav a:hover {
+/* Defines the background colour and colour of the text after being hovered over on the main menu navigation bar */
+background-color: white;
+color: #A5CCEF;
+border-radius: 5px;
+}
+
+.logo {
+image-align: left;
+}
+
+body {
+/* Sets the font for the paragraph on the page */
+font-family: "Bahnschrift SemiBold";
+text-align: left;
+}
+
+</style>
+<body>
+<nav>
+<div id="logo">
+<img src="train.png" alt="Logo" style="height: 80px;"> 
+</div>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="profile.html">About</a></li>
+<li><a href="Employee Profile.html">Profiles</a></li>
+<li><a href="JobSpec.html">Job Specification</a></li>
+<li><a href="Courses.html">Courses</a></li>
+<li><a href="FORM.html">Apply</a></li>
+</ul>
+</nav>
+<div id="page">
+</div>
+<div id="header">
+<div>
+   <u><h1>Application Form</h1></u>
+   <h2>Fill in the information below and we'll get back to you as soon as possible.</h2>
+   <form id="applicationForm">
+   <label for="firstName">First Name *</label><br />
+   <input type="text" id="firstName" value="" size="100" /><br /><br />
+   <label for="lastName">Last Name *</label><br />
+   <input type="text" id="lastName" value="" size="100" /><br /><br />
+   <label for="emailPrompt">Email *</label><br />
+   <input type="text" id="email" value="" size="100" /><br /><br />
+   <label for="phoneNumber">Phone Number *</label><br />
+   <input type="text" id="phoneNumber" value="" size="100" /><br /><br />
+   <label for="Education">Qualifications </label><br />
+   <input type="text" id="Education" value="" size="100" /><br /><br />
+   <label for="reasonsForWork">Reasons *</label><br />
+   <input type="text" id="reasonsForWork" value="" style="padding: 15px; width: 736px; height: 100px;" /><br /><br />
+   <p id="errorMessage" style="color: red;"></p>
+   <button type="button" onClick="validateForm();">Submit</button>
+   <button type="button" onClick="setupForm();">Reset</button>
+   </form>
+   <script>
+   function validateForm(){
+           //Grab all inputs from the fields in the form
+           const firstName = document.getElementById("firstName").value.trim(); //.value.trim() gets the text from the box and removes accidental whitespace at the beginning and end of the input, const defines the variable type as a constant
+           const lastName = document.getElementById("lastName").value.trim();
+           const email = document.getElementById("email").value.trim();
+           const phoneNumber = document.getElementById("phoneNumber").value.trim();
+           const Education = document.getElementById("Education").value.trim();
+           const reasonsForWork = document.getElementById("reasonsforWork").value.trim();
+           const errorDisplay = document.getElementById('errorMessage');
+           //Define the input masks to validate the Phone Number and Email against.
+           const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //Ensures that an @ and . must be present in the email address
+           const phonePattern = /^\d{11}$/; //Allows a phone number to have eleven decimal characters
+           //Validation to check if all inputs are entered and meet the input masks
+           if (firstName === "" || lastName === "" || email === "" || phoneNumber === "" || reasonsForWork === "") {
+               errorDisplay.innerText = "All fields marked with * are required."; //Alters errorDisplay to contain a message
+               return false;
+           }
+
+           if (!emailPattern.test(email)) {
+               errorDisplay.innerText = "Please enter a valid email address."; //Alters errorDisplay to contain a message
+               return false;
+           }
+
+           if (!phonePattern.test(phoneNumber)) {
+               errorDisplay.innerText = "Phone number must be 11 digits."; //Alters errorDisplay to contain a message
+               return false;
+           }
+
+           //If all checks pass
+           errorDisplay.style.color = "green"; //changes the font color of errorDisplay
+           errorDisplay.innerText = "Form submitted successfully!"; //Alters errorDisplay to contain a message
+    
+    }
+	// The reset function for the form.
+    function setupForm(){
+            document.getElementById("applicationForm").reset(); //Sets all inputs back to null.
+            document.getElementById("errorMessage").innerText = ""; //Clears the value in errorMessage
+    }
+    </script>
+</body>
+</html>
+  
