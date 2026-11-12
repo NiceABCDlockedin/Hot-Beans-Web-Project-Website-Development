@@ -97,6 +97,7 @@ text-align: left;
            const Education = document.getElementById("Education").value.trim();
            const reasonsforWork = document.getElementById("reasonsForWork").value.trim();
            const errorDisplay = document.getElementById('errorMessage');
+           errorDisplay.style.color = "red"
            //Define the input masks to validate the Phone Number and Email against.
            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //Ensures that an @ and . must be present in the email address
            const phonePattern = /^\d{11}$/; //Allows a phone number to have eleven decimal characters
@@ -108,13 +109,11 @@ text-align: left;
            }
 
            if (!emailPattern.test(email)) {
-               errorDisplay.style.color = "red"; //changes the font color of errorDisplay
                errorDisplay.innerText = "Please enter a valid email address."; //Alters errorDisplay to contain a message
                return false;
            }
 
            if (!phonePattern.test(phoneNumber)) {
-               errorDisplay.style.color = "red"; //changes the font color of errorDisplay
                errorDisplay.innerText = "Phone number must be 11 digits."; //Alters errorDisplay to contain a message
                return false;
            }
@@ -128,6 +127,7 @@ text-align: left;
     function setupForm(){
             document.getElementById("applicationForm").reset(); //Sets all inputs back to null.
             document.getElementById("errorMessage").innerText = ""; //Clears the value in errorMessage
+            document.getElementById("errorMessage").style.color = "red";
     }
     </script>
 </body>
